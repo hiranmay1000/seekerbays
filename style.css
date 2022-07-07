@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@200;300;400;700;900&family=Nunito:wght@200;400;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -123,6 +124,7 @@ header nav ul li a:hover {
 
 .cards-container {
     padding: 15px 0;
+
 }
 
 .category-cards {
@@ -130,6 +132,7 @@ header nav ul li a:hover {
     width: 100%;
     margin: 30px 0;
     display: flex;
+
 }
 
 .img-container {
@@ -140,6 +143,7 @@ header nav ul li a:hover {
     justify-content: center;
     overflow: hidden;
     border-radius: 4px;
+
 }
 
 .img-container img {
@@ -167,7 +171,6 @@ header nav ul li a:hover {
     width: 100%;
     height: 40px;
     display: flex;
-    align-items: center;
     justify-content: center;
     background-image: linear-gradient(to right, rgba(0, 7, 12, 0.496), rgba(0, 98, 255, 0.644)), url(./images/vector3.jpg);
     background-position: center;
@@ -178,7 +181,8 @@ header nav ul li a:hover {
 .featuring-h p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #dfeaff;
-    font-weight: 400;
+    /* margin-top: .5rem; */
+    line-height: 40px;;
 }
 
 /* -----------------------PAGE1-END------------------------- */
@@ -198,11 +202,13 @@ header nav ul li a:hover {
     margin: 30px 0;
     border-radius: 4px;
     transition: 0.5s ease-in;
+    box-shadow: 3px 3px 12px;
+
 }
 
 .latest-upload-cards-heading {
-    font-size: 40px;
-    font-weight: 500;
+    font-family: "montserrat";
+    font-size: 25px;
 }
 
 
@@ -223,19 +229,19 @@ header nav ul li a:hover {
 }
 
 
-#mobile-slides{
+#mobile-slides {
     display: block;
 }
 
-#desktop-slides{
+#desktop-slides {
     display: none;
 }
 
-.better-bg{
+.better-bg {
     background-image: url(/images/scenary-man-sun.jpg);
 }
 
-.purpose-bg{
+.purpose-bg {
     background-image: url(/images/secenary3.jpg);
 }
 
@@ -258,7 +264,6 @@ header nav ul li a:hover {
     background-color: #dfeaff;
     border-radius: 4px;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
@@ -268,6 +273,10 @@ header nav ul li a:hover {
     color: #101010;
     font-weight: 400;
     line-height: 40px;
+}
+
+.latest-content-para{
+    display: none;
 }
 
 /* -----------------------PAGE2-END------------------------- */
@@ -393,7 +402,6 @@ h4 {
 
 .collaboration-page h4,
 p {
-    padding: 5px 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: silver;
 }
@@ -414,7 +422,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-}   
+}
 
 
 
@@ -532,8 +540,7 @@ p {
     }
 
     .latest-upload-cards-heading {
-        font-size: 50px;
-        font-weight: 300;
+        font-size: 3    0px;
     }
 
 
@@ -727,10 +734,50 @@ p {
     /* -----------------------PAGE1-END------------------------- */
 
     /* -------------------------PAGE2--------------------------- */
+    .page2{
+        height: 1500px;
+    }
 
     .cards-container a {
-        font-weight: 900;
-        padding: 30px 60px;
+        font-family: "montserrat";
+        font-size: 32px;
+        padding: 30px;
+        display: block;
+    }
+
+    .latest-uploads-cards{
+
+        margin: 50px;
+        width: 450px;
+        height: 470px;
+        float: left;
+        background-color: rgba(237, 237, 237, 0.4);
+    }
+
+    .latest-uploads-cards a{
+        width: 450px;
+        height: 350px;
+    }
+    
+
+    .latest-cards-page{
+        display: block;
+    }
+
+    .latest-content-para{
+        display: block;
+        padding: 10px 20px;
+        font-size: 18px;
+        color: #111;
+    }
+
+    .see-all{
+        display: none;
+    }
+
+    .latest-uploads-cards a{
+        display: flex;
+        align-items: flex-end;
     }
 
     /* -----------------------PAGE2-END------------------------- */
@@ -819,9 +866,9 @@ p {
 
     /* ------------------------SLIDE-PAGE---------------------- */
 
-    #slide-page{
+    #slide-page {
         display: flex;
-        justify-content: center ;
+        justify-content: center;
         align-items: center;
     }
 
@@ -829,20 +876,21 @@ p {
         margin: auto;
         height: 100vh;
         width: 50%;
-    }  
+    }
 
-    #slide-page{
+    #slide-page {
         height: 100vh;
         background-color: rgba(219, 220, 221, 0.8);
     }
 
-    #mobile-slides{
+    #mobile-slides {
         display: none;
     }
-    
-    #desktop-slides{
+
+    #desktop-slides {
         display: flex;
     }
+
     /* ----------------------SLIDE-PAGE-END---------------------- */
 
     /* ------------------------FOOTER------------------------ */
