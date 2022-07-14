@@ -107,6 +107,34 @@ header nav ul li a:hover {
     padding: 60px 20px;
 }
 
+.back-to-top-btn {
+    height: 50px;
+    width: 50px;
+    background-color: rgba(205, 202, 202, 0.67);
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-top-left-radius: 40px;
+    border-top-right-radius: 40px; */
+    border-start-start-radius: 40px;
+}
+
+.b-t-t-btn-container {
+    background-image: url(./images/arrow1.png);
+    background-position: center;
+    background-size: cover;
+    height: 12px;
+    width: 12px;
+    transform: rotate(-90deg);
+    margin-right: -5px;
+    margin-bottom: -5px;
+}
+
+
 /* -----------------------------PAGE1----------------------------- */
 
 .cards-container a {
@@ -182,7 +210,8 @@ header nav ul li a:hover {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #dfeaff;
     /* margin-top: .5rem; */
-    line-height: 40px;;
+    line-height: 40px;
+    ;
 }
 
 /* -----------------------PAGE1-END------------------------- */
@@ -237,14 +266,6 @@ header nav ul li a:hover {
     display: none;
 }
 
-.better-bg {
-    background-image: url(/images/scenary-man-sun.jpg);
-}
-
-.purpose-bg {
-    background-image: url(/images/secenary3.jpg);
-}
-
 .importance-of-solitary {
     background-image: linear-gradient(to bottom right, rgba(255, 11, 255, 0.1), rgba(0, 0, 255, 0.347)), url(./images/dark_night.jpg);
 }
@@ -255,6 +276,14 @@ header nav ul li a:hover {
 
 .dependency {
     background-image: url(./images/chess.jpg);
+}
+
+.better-bg {
+    background-image: url(./images/scenary-man-sun.jpg);
+}
+
+.purpose-bg {
+    background-image: url(./images/secenary3.jpg);
 }
 
 
@@ -275,7 +304,7 @@ header nav ul li a:hover {
     line-height: 40px;
 }
 
-.latest-content-para{
+.latest-content-para {
     display: none;
 }
 
@@ -424,6 +453,10 @@ p {
     align-items: center;
 }
 
+.carousel-inner{
+    border-radius: 4px;
+}
+
 
 
 /* -----------------------PAGE6-END---------------------------*/
@@ -540,7 +573,7 @@ p {
     }
 
     .latest-upload-cards-heading {
-        font-size: 3    0px;
+        font-size: 3 0px;
     }
 
 
@@ -704,6 +737,19 @@ p {
         display: none;
     }
 
+    .back-to-top-btn {
+        width: 150px;
+        height: 40px;
+        right: 10%;
+        border-start-end-radius: 35px;
+    }
+
+    .b-t-t-btn-container {
+        height: 15px;
+        width: 15px;
+    }
+
+
     /* -----------------------------PAGE1----------------------------- */
 
     .page-heading {
@@ -734,7 +780,7 @@ p {
     /* -----------------------PAGE1-END------------------------- */
 
     /* -------------------------PAGE2--------------------------- */
-    .page2{
+    .page2 {
         height: 1500px;
     }
 
@@ -745,37 +791,37 @@ p {
         display: block;
     }
 
-    .latest-uploads-cards{
+    .latest-uploads-cards {
 
         margin: 50px;
         width: 450px;
-        height: 470px;
+        height: 490px;
         float: left;
         background-color: rgba(237, 237, 237, 0.4);
     }
 
-    .latest-uploads-cards a{
+    .latest-uploads-cards a {
         width: 450px;
         height: 350px;
     }
-    
 
-    .latest-cards-page{
+
+    .latest-cards-page {
         display: block;
     }
 
-    .latest-content-para{
+    .latest-content-para {
         display: block;
         padding: 10px 20px;
         font-size: 18px;
         color: #111;
     }
 
-    .see-all{
+    .see-all {
         display: none;
     }
 
-    .latest-uploads-cards a{
+    .latest-uploads-cards a {
         display: flex;
         align-items: flex-end;
     }
@@ -866,19 +912,17 @@ p {
 
     /* ------------------------SLIDE-PAGE---------------------- */
 
-    #slide-page {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
     .carousel-container {
         margin: auto;
         height: 100vh;
         width: 50%;
     }
 
-    #slide-page {
+    .carousel-inner{
+        border-radius: 8px;
+    }
+
+    #slide-page-desktop {
         height: 100vh;
         background-color: rgba(219, 220, 221, 0.8);
     }
